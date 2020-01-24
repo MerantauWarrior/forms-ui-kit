@@ -16,6 +16,9 @@ a{
     text-decoration: none;
 }
 /*General*/
+.screen-forms{
+    padding: 15px;
+}
 .c-green{
     color: #64B904;
 }
