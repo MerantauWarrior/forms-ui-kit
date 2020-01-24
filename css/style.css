@@ -1,0 +1,146 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/*General*/
+.c-green{
+    color: #64B904;
+}
+.space-between{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*---- FORMS ----*/
+.screen-forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F2F3F1;
+}
+.form-box{
+    padding: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 1px rgba(26, 28, 23, 0.15);
+    -moz-box-shadow: 0 0 1px rgba(26, 28, 23, 0.15);
+    box-shadow: 0 0 1px rgba(26, 28, 23, 0.15);
+}
+.form-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1C17;
+}
+.form-link{
+    font-size: 14px;
+    color: #4B6EE9;
+}
+/*Registration*/
+.registration{
+    width: 100%;
+    max-width: 376px;
+}
+.registration__field{
+    margin-top: 29px;
+}
+.registration__login{
+    margin-top: 54px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.form-text-after{
+    margin-top: 32px;
+    font-size: 14px;
+    text-align: center;
+}
+/*Login*/
+.login{
+    width: 100%;
+    max-width: 376px;
+}
+.login__forgot{
+    margin: 51px 0;
+}
+/*Reset*/
+.reset{
+    width: 100%;
+    max-width: 376px;
+}
+.reset-btn{
+    margin-top: 48px;
+}
+.reset__answer{
+    margin: 48px 0;
+    font-size: 14px;
+    color: #1A1C17;
+}
+/*Approving*/
+.approving{
+    width: 100%;
+    max-width: 376px;
+}
+.approving-account-btn{
+    margin-top: 101px;
+}
+.approving__text{
+    margin-top: 45px;
+    margin-bottom: 27px;
+    font-size: 14px;
+    color: #1A1C17;
+}
+.approving__tel{
+    font-size: 16px;
+    color: #1A1C17;
+}
+.approving__number{
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+.approving__number-label{
+    margin-bottom: 10px;
+}
+.approving__wait{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.approving__wait-label{
+    font-size: 14px;
+    color: #73786D;
+}
+.approving__timer{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1C17;
+}
+.approving__resend{
+    margin-top: 80px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.approving__resend-label{
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #F92F3B;
+}
+.approving__resend-label--disabled{
+    color: #B3B6AF;
+}

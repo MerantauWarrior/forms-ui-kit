@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Approving No Massege</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<div class="screen-forms">
+
+  <div class="approving">
+    <div class="form-box">
+      <div class="form-title">Подтверждение телефона</div>
+      <form action="" method="get">
+        <div class="approving__number">
+          <div class="label approving__number-label">Сообщение с кодом отправлено на номер</div>
+          <div class="space-between">
+            <div class="approving__tel">+7 960 589-96-95</div>
+            <a href="#" class="form-link">Изменить</a>
+          </div>
+        </div>
+        <div class="inp-field registration__field">
+          <label for="1" class="label">Код из SMS</label>
+          <input type="text" name="a" id="1" class="inp inp--large" maxlength="4" placeholder="4 цифры">
+          <div class="inp-msg">Сессия: 458962123</div>
+        </div>
+        <div class="approving__resend">
+          <div class="approving__resend-label">Сообщение не пришло?</div>
+          <button class="btn btn--s btn--l" type="submit">Отправить код повторно</button>
+        </div>
+        <button class="btn btn--p btn--l" type="submit" disabled>Продолжить</button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="js/custom.js"></script>
+</body>
+</html>
