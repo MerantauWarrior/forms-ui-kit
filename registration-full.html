@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Registration</title>
+  <title>Registration Full</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic"
@@ -16,6 +16,22 @@
 <body>
 
 <div class="screen-forms">
+
+  <div class="screen-forms-header space-between">
+    <div class="screen-forms-logo">
+      <a href="#" class=""><img src="images/logo.png" alt="DocsOn" class=""></a>
+    </div>
+    <div class="screen-forms-language">
+      <div class="select select--icon">
+        <select>
+          <option value="0" data-icon="images/flag-1.png">Русский</option>
+          <option value="2" data-icon="images/flag-3.png">English</option>
+          <option value="1" data-icon="images/flag-1.png">Русский</option>
+          <option value="3" data-icon="images/flag-2.png">中文 (繁體)</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
   <div class="registration ">
     <div class="form-box">
@@ -43,7 +59,10 @@
           <input type="text" name="a" id="14" class="inp inp--large" placeholder="Пароль">
           <div class="inp-msg">Минимум 6 символов</div>
         </div>
-        <button class="btn btn--p btn--l registration__btn" type="submit">Зарегистрироваться</button>
+        <div class="registration__login">
+          <a href="#" >Уже есть аккаунт?</a>
+        </div>
+        <button class="btn btn--p btn--l" type="submit">Зарегистрироваться</button>
       </form>
     </div>
     <div class="form-text-after">

@@ -1,10 +1,17 @@
 input, button, textarea, a{
     outline: none;
 }
+a{
+    font-size: 14px;
+    color: #4B6EE9;
+    text-decoration: none;
+}
+a:not(.btn):hover{
+    text-decoration: underline;
+}
 /*Input*/
 .inp-field{
     position: relative;
-    min-width: 200px;
     width: 100%;
 }
 .label{
@@ -164,4 +171,137 @@ input[type="checkbox"]:checked ~ .checkbox__checkmark{
 .checkbox:hover input[type="checkbox"]:checked ~ .checkbox__checkmark{
     background: url("../images/checkmark.svg") no-repeat center center, #6CC804;
     border: 1px solid #6CC804;
+}
+/*Messages*/
+.message{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding-left: 14px;
+    padding-right: 14px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+    background-color: rgba(115,120,109,0.7);
+    -webkit-box-shadow: 0 3px 15px rgba(27, 28, 23, 0.15);
+    -moz-box-shadow: 0 3px 15px rgba(27, 28, 23, 0.15);
+    box-shadow: 0 3px 15px rgba(27, 28, 23, 0.15);
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+}
+.message--done{
+    padding-left: 34px;
+    background: url("../images/msg-done.svg") no-repeat 6px center, rgba(100,185,4,0.7);
+    -webkit-box-shadow: 0 3px 15px rgba(83, 154, 3, 0.3);
+    -moz-box-shadow: 0 3px 15px rgba(83, 154, 3, 0.3);
+    box-shadow: 0 3px 15px rgba(83, 154, 3, 0.3);
+}
+.message--error{
+    padding-left: 34px;
+    background: url("../images/msg-error.svg") no-repeat 6px center, rgba(249,47,59,0.7);
+    -webkit-box-shadow: 0 3px 15px rgba(249, 47, 59, 0.3);
+    -moz-box-shadow: 0 3px 15px rgba(249, 47, 59, 0.3);
+    box-shadow: 0 3px 15px rgba(249, 47, 59, 0.3);
+}
+/*Select*/
+.select {
+    position: relative;
+    width: 100%;
+}
+.select select {
+    display: none;
+}
+.select-selected {
+    border: 1px solid #E6E7E4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #1A1C17;
+}
+.select--disabled .select-selected{
+    background-color: #F2F3F1;
+    cursor: default;
+}
+.select-selected.select-arrow-active{
+    border: 1px solid #64B904;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    background: url("../images/select-arrow.svg") no-repeat center center;
+    background-size: contain;
+}
+.select-selected.select-arrow-active:after {
+    background: url("../images/select-arrow.svg") no-repeat right center;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+.select--l .select-items div, .select--l .select-selected{
+    height: 44px;
+}
+.select--icon .select-items div, .select--icon .select-selected{
+    padding-left: 12px;
+}
+.select--icon img{
+    margin-right: 12px;
+}
+.select-items div{
+    color: #1A1C17;
+}
+.select-items div.same-as-selected{
+    color: rgba(26, 28, 23, 0.35);
+    cursor: default;
+}
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 4px;
+    padding: 4px 0;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 15px rgba(27, 28, 23, 0.15);
+    -moz-box-shadow: 0 3px 15px rgba(27, 28, 23, 0.15);
+    box-shadow: 0 3px 15px rgba(27, 28, 23, 0.15);
+    z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+.select-items div:not(.same-as-selected):hover{
+    background-color: #FAFAFA;
 }

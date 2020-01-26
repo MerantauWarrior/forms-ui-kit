@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Login</title>
+  <title>Login Error</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic"
@@ -17,20 +17,23 @@
 
 <div class="screen-forms">
   <div class="forms-login">
+    <div class="message message--error">Следующая неверная попытка заблокирует вход на 1 ч.</div>
     <div class="login">
       <div class="form-box">
         <div class="space-between">
           <div class="form-title">Вход в docs<span class="c-green">on</span></div>
-          <a href="#">Еще нет аккаунта?</a>
+          <a href="#" >Еще нет аккаунта?</a>
         </div>
         <form action="" method="get">
-          <div class="inp-field registration__field">
+          <div class="inp-field registration__field inp-field--error">
             <label for="1" class="label">E-mail</label>
-            <input type="email" name="a" id="1" class="inp inp--large">
+            <input type="email" name="a" id="1" class="inp inp--large" value="donald.duck@gmail.com">
+            <div class="inp-msg">Неверный e-mail или пароль</div>
           </div>
-          <div class="inp-field registration__field">
+          <div class="inp-field registration__field inp-field--error">
             <label for="12" class="label">Пароль</label>
-            <input type="password" name="a" id="12" class="inp inp--large">
+            <input type="text" name="a" id="12" class="inp inp--large" value="pasSw0rd">
+            <div class="inp-msg">Неверный e-mail или пароль</div>
           </div>
           <div class="login__forgot space-between">
             <label for="qq" class="checkbox">
@@ -38,12 +41,12 @@
               <span class="checkbox__checkmark"></span>
               Запомнить меня
             </label>
-            <a href="#">Забыли пароль?</a>
+            <a href="#" >Забыли пароль?</a>
           </div>
-          <button class="btn btn--p btn--l" type="submit">Войти</button>
+          <button class="btn btn--p btn--l" type="submit" disabled>Войти</button>
         </form>
       </div>
-      <div class="form-text-after">Возникли проблемы? <br><a href="#">Обратитесь в службу поддержки</a>.</div>
+      <div class="form-text-after">Возникли проблемы? <br><a href="#" >Обратитесь в службу поддержки</a>.</div>
     </div>
   </div>
 </div>
