@@ -8,4 +8,7 @@
     .screen-forms-language{
         margin-right: 0;
     }
+    .registration__row .registration__field{
+        width: 100%;
+    }
 }
