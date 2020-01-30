@@ -25,6 +25,12 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.ai-bl{
+    align-items: baseline !important;
+}
+.ai-stretch{
+    align-items: stretch !important;
+}
 /*---- FORMS ----*/
 .screen-forms{
     position: relative;
@@ -149,7 +155,8 @@ body{
     max-width: 376px;
 }
 .approving-account-btn{
-    margin-top: 101px;
+    margin-top: 50px;
+    /*margin-top: 101px;*/
 }
 .approving__text{
     margin-top: 45px;
@@ -184,7 +191,8 @@ body{
     color: #1A1C17;
 }
 .approving__resend{
-    margin-top: 80px;
+    margin-top: 40px;
+    /*margin-top: 80px;*/
     margin-bottom: 24px;
     text-align: center;
 }

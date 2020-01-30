@@ -11,12 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 //Login timer
-  function startTimer(duration, display) {
+  var coutnowd = function startTimer(duration, display) {
     var start = Date.now(),
       diff,
       minutes,
       seconds;
-
     function timer() {
       diff = duration - (((Date.now() - start) / 1000) | 0);
       minutes = (diff / 60) | 0;
@@ -24,16 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
       minutes = minutes < 10 ? "0" + minutes : minutes;
       seconds = seconds < 10 ? "0" + seconds : seconds;
       display.textContent = minutes + ":" + seconds;
+      if(diff < 0){
+        display.textContent = "00:00";
+      }
     }
-
     timer();
     setInterval(timer, 1000);
-  }
-
+  };
   var time = 60 * 60,
     display = document.querySelector('#loginTimer');
   if (document.body.contains(display)) {
-    startTimer(time, display);
+    coutnowd(time, display);
+  }
+  var timeSMS = 1 * 5,
+    displaySMS = document.querySelector('.approving__timer');
+  if (document.body.contains(displaySMS)) {
+    coutnowd(timeSMS, displaySMS);
   }
 
 //Select

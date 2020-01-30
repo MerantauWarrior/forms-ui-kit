@@ -30,7 +30,8 @@
         </div>
         <div class="inp-field registration__field">
           <label for="1" class="label">Код из SMS</label>
-          <input type="text" name="a" id="1" class="inp inp--large" maxlength="4" placeholder="4 цифры">
+          <input type="text" name="a" id="1" class="inp inp--large" maxlength="4" placeholder="4 цифры"
+                 onkeypress="return isNumberKey(event)">
           <div class="inp-msg">Сессия: 458962123</div>
         </div>
         <div class="approving__wait">
@@ -46,5 +47,16 @@
 </div>
 
 <script src="js/custom.js"></script>
+<script>
+  function isNumberKey(evt)
+  {
+    var e = evt || window.event; // for trans-browser compatibility
+    var charCode = e.which || e.keyCode;
+    if (charCode > 31 && (charCode < 47 || charCode > 57))
+      return false;
+    if (e.shiftKey) return false;
+    return true;
+  }
+</script>
 </body>
 </html>
