@@ -1,5 +1,8 @@
 input, button, textarea, a{
     outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 a{
     font-size: 14px;
