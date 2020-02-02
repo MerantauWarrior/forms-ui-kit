@@ -28,9 +28,6 @@ body{
 .ai-bl{
     align-items: baseline !important;
 }
-.ai-stretch{
-    align-items: stretch !important;
-}
 /*---- FORMS ----*/
 .screen-forms{
     position: relative;

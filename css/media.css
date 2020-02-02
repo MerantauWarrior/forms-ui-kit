@@ -8,13 +8,17 @@
         margin-bottom: 36px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .screen-forms{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .screen-forms{
         min-height:initial;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
     .screen-forms{
