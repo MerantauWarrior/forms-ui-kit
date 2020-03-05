@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Cabinet Settings</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.min.js"></script>
+  <![endif]-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if(Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject){
+        var newScript = document.createElement("script");
+        newScript.src = "https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.min.js";
+        document.head.appendChild(newScript);
+      }
+    });
+  </script>
+</head>
+<body>
+
+<section class="cabinet">
+  <div class="cabinet__mobile-menu">
+    <div class="cabinet__mobile-menu-box">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="cabinet__sidebar">
+    <div class="cabinet__logo">
+      <div class="cabinet__logo-icon">
+        <img src="images/cabinet/logo-icon.svg" alt="">
+      </div>
+      <div class="cabinet__logo-text">
+        <img src="images/cabinet/logo-text.svg" alt="">
+      </div>
+    </div>
+    <div class="cabinet__menu cabinet-menu">
+      <div class="cabinet-menu__list">
+        <div class="cabinet-menu__ddb">
+          <button class="btn btn--p js-add-doc" type="button">
+            <span class="cabinet-menu__ddb-icon">
+             <img src="images/cabinet/icon-add-doc.svg" alt="">
+            </span>
+            <span>Создать документ</span>
+            <span class="cabinet-menu__ddb-arrow">
+              <img src="images/cabinet/dd-arrow.svg" alt="">
+            </span>
+          </button>
+          <div class="cabinet-menu__ddb-items dd-box">
+            <a href="#" class="dd-box__item">Создать документ</a>
+            <a href="#" class="dd-box__item">Создать шаблон</a>
+            <a href="#" class="dd-box__item">Загрузить документ</a>
+          </div>
+        </div>
+        <a href="#" class="cabinet-menu__item">
+          <div class="cabinet-menu__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 5C7.44772 5 7 5.44772 7 6V19C7 19.5523 7.44771 20 8 20H9V8C9 7.44772 9.44772 7 10 7H18V6C18 5.44772 17.5523 5 17 5H8Z"
+              />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18 11.4142V14C18 14.5523 18.4477 15 19 15H21.5858L18 11.4142ZM24 15C24 15.0002 24 15.0005 24 15.0007V25C24 25.5523 23.5523 26 23 26H12C11.4477 26 11 25.5523 11 25V10C11 9.44772 11.4477 9 12 9H17.9998C17.9999 9 17.9999 9 18 9C18.2559 9 18.5118 9.09763 18.7071 9.29289L23.7071 14.2929C23.9024 14.4882 24 14.7441 24 15ZM14 19H21V17H14V19ZM21 23H14V21H21V23Z"
+              />
+            </svg>
+          </div>
+          <div class="cabinet-menu__text">Документы</div>
+          <span class="tooltip">Документы</span>
+        </a>
+        <a href="#" class="cabinet-menu__item">
+          <div class="cabinet-menu__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.66658 22.7473L7.25265 22.3334C7.09307 22.0951 7 21.8084 7 21.5V19H9V21V23H8.5C8.1916 23 7.90494 22.9069 7.66658 22.7473ZM22 7H20H18V5H20.5C20.8084 5 21.0951 5.09307 21.3334 5.25265L21.7473 5.66658C21.9069 5.90494 22 6.1916 22 6.5V7ZM11 5H8.5C8.1916 5 7.90494 5.09307 7.66658 5.25265L7.25265 5.66658C7.09307 5.90494 7 6.1916 7 6.5V9H9V7H11V5ZM7 17H9V11H7V17ZM13 5V7H16V5H13Z"
+              />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 10C11 9.44772 11.4477 9 12 9H18.5385H24C24.5523 9 25 9.44772 25 10V15V25C25 25.5523 24.5523 26 24 26H12C11.4477 26 11 25.5523 11 25V10ZM19 15V22H17L17 15H14V13H17H19H22V15H19Z"
+              />
+            </svg>
+          </div>
+          <div class="cabinet-menu__text">Шаблоны</div>
+          <span class="tooltip">Шаблоны</span>
+        </a>
+        <a href="#" class="cabinet-menu__item">
+          <div class="cabinet-menu__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9998 24C22.9998 25.1046 22.1043 26 20.9998 26C19.8952 26 18.9998 25.1046 18.9998 24C18.9998 24 19.8952 24 20.9998 24C22.1043 24 22.9998 24 22.9998 24Z"
+              />
+              <path d="M14.9998 24C14.9998 25.1046 14.1043 26 12.9998 26C11.8952 26 10.9998 25.1046 10.9998 24C10.9998 24 11.8952 24 12.9998 24C14.1043 24 14.9998 24 14.9998 24Z"
+              />
+              <rect x="12" y="10" width="10" height="2" fill="#1A1C17"/>
+              <rect x="14" y="6" width="6" height="2" fill="#1A1C17"/>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.99999 8.00003C4.44771 8.00003 4 8.44775 4 9.00003C4 9.55232 4.44772 10 5.00001 10L7.21145 10L8.61483 15.8472L10.1611 22.6114C10.2131 22.8388 10.4153 23 10.6485 23H23.3595C23.589 23 23.789 22.8438 23.8446 22.6213L25.8446 14.6213C25.9235 14.3057 25.6848 14 25.3595 14H10.2283L8.97223 8.76663L8.78823 8L7.99984 8.00001L4.99999 8.00003ZM15.9999 17H13.9999V19H15.9999V17ZM17.9999 17H19.9999V19H17.9999V17Z"
+              />
+            </svg>
+          </div>
+          <div class="cabinet-menu__text">Каталог</div>
+          <span class="tooltip">Каталог</span>
+        </a>
+        <a href="#" class="cabinet-menu__item">
+          <div class="cabinet-menu__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <path d="M22 11.95C22 14.9876 20 18 18 18C16 18 14 14.9876 14 11.95C14 8.91243 15.2386 7 18 7C20.7614 7 22 8.91243 22 11.95Z"
+              />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.079 17.6975C11.0728 18.831 9 21.2272 9 24C9 25 13.0294 27 18 27C22.9706 27 27 25 27 24C27 21.2272 24.9272 18.831 21.921 17.6975C20.8222 19.0912 19.4111 20.0001 18 20.0001C16.5889 20.0001 15.1778 19.0912 14.079 17.6975Z"
+              />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 11.75C12 8.89367 12.8834 6.76692 14.7902 5.72178C14.2328 5.25469 13.4748 5 12.5 5C10.0838 5 9 6.56472 9 9.05C9 10.611 9.6904 12.1639 10.6376 13.1031C7.42373 13.5962 5 15.8002 5 18.4444C5 18.8768 5.96865 19.5496 7.49321 20.0619C8.72593 18.2426 10.6465 16.7775 12.9684 15.9005C12.6804 15.2969 12.4466 14.6529 12.2809 13.9873C12.2002 13.6627 12.1356 13.3331 12.0888 13.0004C12.0306 12.5868 12 12.1686 12 11.75Z"
+              />
+
+            </svg>
+          </div>
+          <div class="cabinet-menu__text">Пользователи</div>
+          <span class="tooltip">Пользователи</span>
+        </a>
+        <a href="#" class="cabinet-menu__item cabinet-menu__item_active mta">
+          <div class="cabinet-menu__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="path-2-inside-1" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6 16.9322L6 15.0678C6 14.8334 6.16277 14.6305 6.39153 14.5797L8.20881 14.1758C8.57304 12.6139 9.3948 11.2279 10.5251 10.1666L9.96564 8.38906C9.89528 8.16552 9.98962 7.9231 10.1926 7.80593L11.8073 6.87368C12.0102 6.75651 12.2673 6.79601 12.4257 6.96871L13.6838 8.34026C14.417 8.11886 15.1945 7.99985 15.9999 7.99985C16.8053 7.99985 17.5829 8.11885 18.316 8.34024L19.5741 6.96863C19.7325 6.79593 19.9896 6.75642 20.1926 6.8736L21.8073 7.80585C22.0102 7.92302 22.1046 8.16544 22.0342 8.38897L21.4747 10.1666C22.605 11.2279 23.4268 12.6139 23.791 14.1758L25.6085 14.5797C25.8372 14.6305 26 14.8334 26 15.0678L26 16.9322C26 17.1666 25.8372 17.3695 25.6085 17.4203L23.791 17.8242C23.4267 19.386 22.6049 20.772 21.4746 21.8332L22.0342 23.6111C22.1046 23.8346 22.0102 24.077 21.8073 24.1942L20.1926 25.1264C19.9896 25.2436 19.7325 25.2041 19.5741 25.0314L18.3157 23.6595C17.5827 23.8809 16.8052 23.9998 15.9999 23.9998C15.1947 23.9998 14.4172 23.8809 13.6841 23.6595L12.4258 25.0313C12.2674 25.204 12.0103 25.2435 11.8074 25.1264L10.1927 24.1941C9.98973 24.0769 9.89539 23.8345 9.96574 23.611L10.5253 21.8332C9.39496 20.772 8.57317 19.386 8.20888 17.8242L6.39153 17.4203C6.16277 17.3695 6 17.1666 6 16.9322ZM17.9999 12.536C19.9131 13.6406 20.5686 16.0869 19.464 18.0001C18.3595 19.9133 15.9131 20.5688 13.9999 19.4642C12.0868 18.3596 11.4313 15.9133 12.5358 14.0001C13.6404 12.0869 16.0868 11.4314 17.9999 12.536Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 16.9322L6 15.0678C6 14.8334 6.16277 14.6305 6.39153 14.5797L8.20881 14.1758C8.57304 12.6139 9.3948 11.2279 10.5251 10.1666L9.96564 8.38906C9.89528 8.16552 9.98962 7.9231 10.1926 7.80593L11.8073 6.87368C12.0102 6.75651 12.2673 6.79601 12.4257 6.96871L13.6838 8.34026C14.417 8.11886 15.1945 7.99985 15.9999 7.99985C16.8053 7.99985 17.5829 8.11885 18.316 8.34024L19.5741 6.96863C19.7325 6.79593 19.9896 6.75642 20.1926 6.8736L21.8073 7.80585C22.0102 7.92302 22.1046 8.16544 22.0342 8.38897L21.4747 10.1666C22.605 11.2279 23.4268 12.6139 23.791 14.1758L25.6085 14.5797C25.8372 14.6305 26 14.8334 26 15.0678L26 16.9322C26 17.1666 25.8372 17.3695 25.6085 17.4203L23.791 17.8242C23.4267 19.386 22.6049 20.772 21.4746 21.8332L22.0342 23.6111C22.1046 23.8346 22.0102 24.077 21.8073 24.1942L20.1926 25.1264C19.9896 25.2436 19.7325 25.2041 19.5741 25.0314L18.3157 23.6595C17.5827 23.8809 16.8052 23.9998 15.9999 23.9998C15.1947 23.9998 14.4172 23.8809 13.6841 23.6595L12.4258 25.0313C12.2674 25.204 12.0103 25.2435 11.8074 25.1264L10.1927 24.1941C9.98973 24.0769 9.89539 23.8345 9.96574 23.611L10.5253 21.8332C9.39496 20.772 8.57317 19.386 8.20888 17.8242L6.39153 17.4203C6.16277 17.3695 6 17.1666 6 16.9322ZM17.9999 12.536C19.9131 13.6406 20.5686 16.0869 19.464 18.0001C18.3595 19.9133 15.9131 20.5688 13.9999 19.4642C12.0868 18.3596 11.4313 15.9133 12.5358 14.0001C13.6404 12.0869 16.0868 11.4314 17.9999 12.536Z"
+              />
+              <path d="M6 15.0678L7 15.0678L6 15.0678ZM6 16.9322L5 16.9322L6 16.9322ZM6.39153 14.5797L6.1746 13.6035L6.1746 13.6035L6.39153 14.5797ZM8.20881 14.1758L8.42574 15.152L9.03982 15.0155L9.18268 14.4029L8.20881 14.1758ZM10.5251 10.1666L11.2096 10.8956L11.6676 10.4656L11.479 9.86637L10.5251 10.1666ZM9.96564 8.38906L10.9195 8.08883L10.9195 8.08883L9.96564 8.38906ZM10.1926 7.80593L10.6926 8.67195L10.6926 8.67195L10.1926 7.80593ZM11.8073 6.87368L11.3073 6.00766L11.3073 6.00766L11.8073 6.87368ZM12.4257 6.96871L11.6888 7.64467L11.6888 7.64467L12.4257 6.96871ZM13.6838 8.34026L12.9469 9.01622L13.3715 9.47916L13.9729 9.29756L13.6838 8.34026ZM18.316 8.34024L18.0269 9.29754L18.6283 9.47914L19.0529 9.0162L18.316 8.34024ZM19.5741 6.96863L18.8372 6.29267L19.5741 6.96863ZM20.1926 6.8736L19.6926 7.73962L19.6926 7.73963L20.1926 6.8736ZM21.8073 7.80585L21.3073 8.67187L21.3073 8.67187L21.8073 7.80585ZM22.0342 8.38897L22.9881 8.6892L22.9881 8.68919L22.0342 8.38897ZM21.4747 10.1666L20.5209 9.86635L20.3322 10.4656L20.7902 10.8956L21.4747 10.1666ZM23.791 14.1758L22.8172 14.4029L22.96 15.0155L23.5741 15.152L23.791 14.1758ZM25.6085 14.5797L25.8254 13.6035L25.6085 14.5797ZM26 15.0678L27 15.0678L26 15.0678ZM26 16.9322L25 16.9322L26 16.9322ZM25.6085 17.4203L25.3915 16.4442L25.6085 17.4203ZM23.791 17.8242L23.574 16.848L22.96 16.9845L22.8171 17.5971L23.791 17.8242ZM21.4746 21.8332L20.7902 21.1042L20.3322 21.5342L20.5208 22.1334L21.4746 21.8332ZM22.0342 23.6111L22.9881 23.3108L22.9881 23.3108L22.0342 23.6111ZM21.8073 24.1942L21.3073 23.3282L21.3073 23.3282L21.8073 24.1942ZM20.1926 25.1264L19.6926 24.2604L20.1926 25.1264ZM19.5741 25.0314L20.311 24.3554L20.311 24.3554L19.5741 25.0314ZM18.3157 23.6595L19.0527 22.9836L18.6281 22.5207L18.0267 22.7022L18.3157 23.6595ZM13.6841 23.6595L13.9732 22.7022L13.3718 22.5207L12.9472 22.9836L13.6841 23.6595ZM12.4258 25.0313L13.1628 25.7073L13.1628 25.7073L12.4258 25.0313ZM11.8074 25.1264L12.3074 24.2603L12.3074 24.2603L11.8074 25.1264ZM10.1927 24.1941L10.6927 23.3281L10.6927 23.3281L10.1927 24.1941ZM9.96574 23.611L9.01188 23.3108L9.01188 23.3108L9.96574 23.611ZM10.5253 21.8332L11.4791 22.1335L11.6678 21.5342L11.2098 21.1042L10.5253 21.8332ZM8.20888 17.8242L9.18274 17.5971L9.03986 16.9845L8.42581 16.848L8.20888 17.8242ZM6.39153 17.4203L6.60847 16.4442L6.60847 16.4442L6.39153 17.4203ZM19.464 18.0001L18.598 17.5001L18.598 17.5001L19.464 18.0001ZM17.9999 12.536L18.4999 11.67L18.4999 11.67L17.9999 12.536ZM13.9999 19.4642L14.4999 18.5982L13.9999 19.4642ZM12.5358 14.0001L11.6698 13.5001L12.5358 14.0001ZM5 15.0678L5 16.9322L7 16.9322L7 15.0678L5 15.0678ZM6.1746 13.6035C5.4883 13.756 5 14.3647 5 15.0678L7 15.0678C7 15.3021 6.83724 15.505 6.60846 15.5558L6.1746 13.6035ZM7.99188 13.1996L6.1746 13.6035L6.60846 15.5558L8.42574 15.152L7.99188 13.1996ZM9.84062 9.43758C8.57032 10.6303 7.64518 12.1895 7.23494 13.9487L9.18268 14.4029C9.50089 13.0384 10.2193 11.8255 11.2096 10.8956L9.84062 9.43758ZM9.01177 8.68928L9.57125 10.4668L11.479 9.86637L10.9195 8.08883L9.01177 8.68928ZM9.69257 6.9399C9.08371 7.29143 8.8007 8.01867 9.01177 8.68928L10.9195 8.08883C10.9899 8.31237 10.8955 8.55478 10.6926 8.67195L9.69257 6.9399ZM11.3073 6.00766L9.69257 6.9399L10.6926 8.67195L12.3073 7.73971L11.3073 6.00766ZM13.1627 6.29275C12.6874 5.77465 11.9161 5.65614 11.3073 6.00766L12.3073 7.73971C12.1043 7.85688 11.8472 7.81738 11.6888 7.64467L13.1627 6.29275ZM14.4207 7.6643L13.1627 6.29275L11.6888 7.64467L12.9469 9.01622L14.4207 7.6643ZM15.9999 6.99985C15.0956 6.99985 14.2206 7.13355 13.3947 7.38295L13.9729 9.29756C14.6133 9.10417 15.2935 8.99985 15.9999 8.99985L15.9999 6.99985ZM18.6051 7.38293C17.7792 7.13355 16.9043 6.99985 15.9999 6.99985L15.9999 8.99985C16.7063 8.99985 17.3865 9.10416 18.0269 9.29754L18.6051 7.38293ZM19.0529 9.0162L20.3111 7.64459L18.8372 6.29267L17.5791 7.66428L19.0529 9.0162ZM20.3111 7.64459C20.1526 7.81729 19.8955 7.8568 19.6926 7.73962L20.6926 6.00758C20.0837 5.65605 19.3124 5.77457 18.8372 6.29267L20.3111 7.64459ZM19.6926 7.73963L21.3073 8.67187L22.3073 6.93982L20.6926 6.00757L19.6926 7.73963ZM21.3073 8.67187C21.1043 8.5547 21.01 8.31229 21.0803 8.08875L22.9881 8.68919C23.1992 8.01858 22.9161 7.29134 22.3073 6.93982L21.3073 8.67187ZM21.0804 8.08875L20.5209 9.86635L22.4286 10.4668L22.9881 8.6892L21.0804 8.08875ZM24.7649 13.9487C24.3547 12.1895 23.4295 10.6303 22.1592 9.43756L20.7902 10.8956C21.7806 11.8254 22.499 13.0384 22.8172 14.4029L24.7649 13.9487ZM23.5741 15.152L25.3915 15.5558L25.8254 13.6035L24.008 13.1996L23.5741 15.152ZM25.3915 15.5558C25.1628 15.505 25 15.3021 25 15.0678L27 15.0678C27 14.3647 26.5117 13.756 25.8254 13.6035L25.3915 15.5558ZM25 15.0678L25 16.9322L27 16.9322L27 15.0678L25 15.0678ZM25 16.9322C25 16.6979 25.1628 16.495 25.3915 16.4442L25.8254 18.3965C26.5117 18.244 27 17.6353 27 16.9322L25 16.9322ZM25.3915 16.4442L23.574 16.848L24.0079 18.8004L25.8254 18.3965L25.3915 16.4442ZM22.1591 22.5622C23.4294 21.3696 24.3545 19.8105 24.7648 18.0514L22.8171 17.5971C22.4989 18.9615 21.7805 20.1744 20.7902 21.1042L22.1591 22.5622ZM20.5208 22.1334L21.0803 23.9113L22.9881 23.3108L22.4285 21.533L20.5208 22.1334ZM21.0803 23.9113C21.01 23.6878 21.1043 23.4453 21.3073 23.3282L22.3073 25.0602C22.9161 24.7087 23.1991 23.9814 22.9881 23.3108L21.0803 23.9113ZM21.3073 23.3282L19.6926 24.2604L20.6926 25.9925L22.3073 25.0602L21.3073 23.3282ZM19.6926 24.2604C19.8955 24.1432 20.1526 24.1827 20.311 24.3554L18.8372 25.7074C19.3124 26.2255 20.0837 26.344 20.6926 25.9925L19.6926 24.2604ZM20.311 24.3554L19.0527 22.9836L17.5788 24.3355L18.8372 25.7074L20.311 24.3554ZM15.9999 24.9998C16.9042 24.9998 17.779 24.8662 18.6048 24.6169L18.0267 22.7022C17.3863 22.8956 16.7062 22.9998 15.9999 22.9998L15.9999 24.9998ZM13.3951 24.6169C14.2209 24.8662 15.0957 24.9998 15.9999 24.9998L15.9999 22.9998C15.2936 22.9998 14.6135 22.8956 13.9732 22.7022L13.3951 24.6169ZM12.9472 22.9836L11.6889 24.3554L13.1628 25.7073L14.4211 24.3355L12.9472 22.9836ZM11.6889 24.3554C11.8473 24.1827 12.1044 24.1432 12.3074 24.2603L11.3074 25.9924C11.9162 26.3439 12.6876 26.2254 13.1628 25.7073L11.6889 24.3554ZM12.3074 24.2603L10.6927 23.3281L9.69268 25.0601L11.3074 25.9924L12.3074 24.2603ZM10.6927 23.3281C10.8956 23.4453 10.99 23.6877 10.9196 23.9112L9.01188 23.3108C8.8008 23.9814 9.08382 24.7086 9.69268 25.0601L10.6927 23.3281ZM10.9196 23.9112L11.4791 22.1335L9.57141 21.533L9.01188 23.3108L10.9196 23.9112ZM7.23502 18.0513C7.64533 19.8105 8.5705 21.3696 9.84081 22.5623L11.2098 21.1042C10.2194 20.1744 9.501 18.9615 9.18274 17.5971L7.23502 18.0513ZM6.1746 18.3965L7.99195 18.8004L8.42581 16.848L6.60847 16.4442L6.1746 18.3965ZM5 16.9322C5 17.6353 5.4883 18.244 6.1746 18.3965L6.60847 16.4442C6.83723 16.495 7 16.6979 7 16.9322L5 16.9322ZM20.3301 18.5001C21.7108 16.1086 20.8914 13.0507 18.4999 11.67L17.4999 13.402C18.9348 14.2305 19.4264 16.0652 18.598 17.5001L20.3301 18.5001ZM13.4999 20.3302C15.8914 21.711 18.9494 20.8916 20.3301 18.5001L18.598 17.5001C17.7696 18.935 15.9348 19.4266 14.4999 18.5982L13.4999 20.3302ZM11.6698 13.5001C10.2891 15.8916 11.1085 18.9495 13.4999 20.3302L14.4999 18.5982C13.0651 17.7698 12.5734 15.935 13.4019 14.5001L11.6698 13.5001ZM18.4999 11.67C16.1085 10.2893 13.0505 11.1087 11.6698 13.5001L13.4019 14.5001C14.2303 13.0652 16.0651 12.5736 17.4999 13.402L18.4999 11.67Z"
+                    mask="url(#path-2-inside-1)"/>
+            </svg>
+          </div>
+          <div class="cabinet-menu__text">Настройки</div>
+          <span class="tooltip">Настройки</span>
+        </a>
+        <a href="#" class="cabinet-menu__item">
+          <div class="cabinet-menu__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 9C7 8.44771 7.44772 8 8 8H24C24.5523 8 25 8.44772 25 9V21C25 21.5523 24.5523 22 24 22H13.2361C13.0808 22 12.9277 22.0361 12.7889 22.1056L8.44721 24.2764C7.78231 24.6088 7 24.1253 7 23.382V19V9Z"
+              />
+              <path d="M14.0344 13.2857C13.7865 11.8571 14.9221 11 16.0172 11C17.1123 11 18 11.7935 18 12.8571C18 14.7143 16.0172 14.619 16.0172 15.8571V16"
+                    stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="16" cy="19" r="1" fill="white"/>
+            </svg>
+          </div>
+          <div class="cabinet-menu__text">Служба поддержки</div>
+          <span class="tooltip">Служба поддержки</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="cabinet__main">
+    <div class="cabinet__top cabinet-top">
+      <div class="cabinet-top__tabs">
+        <a href="#" class="cabinet-top__tab cabinet-top__tab_active">Общие</a>
+        <a href="#" class="cabinet-top__tab">Уведомления</a>
+        <a href="#" class="cabinet-top__tab">Активность</a>
+      </div>
+      <div class="cabinet-top__controls">
+        <div class="cabinet-top__invite">
+          <a href="#" class="btn btn--s">Пригласить пользователя</a>
+        </div>
+        <a href="#" class="cabinet-top__notification">
+          <img src="images/cabinet/icon-notifitation.svg" alt="">
+          <div class="cabinet-top__notification-count">5</div>
+        </a>
+        <div class="cabinet-top__user">
+          <div class="cabinet-top__user-avatar">
+            <img src="images/cabinet/user-avatar.jpg" alt="username">
+          </div>
+          <div class="cabinet-top__user-menu dd-box">
+            <a href="#" class="dd-box__item">Редактировать профиль</a>
+            <a href="#" class="dd-box__item">Выйти</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cabinet__content">
+      <div class="message message--error">Нет соединения с Интернетом</div>
+      <div class="cabinet-general">
+        <form method="get" class="cabinet-general-form">
+          <div class="cabinet-general-form__block">
+            <div class="title-form">Личные данные</div>
+            <div class="cabinet-general-form__col">
+              <div class="inp-field cabinet-general-form__field">
+                <label for="name" class="label">Имя</label>
+                <input type="text" name="name" id="name" class="inp" placeholder="Имя" value="Дональд">
+              </div>
+              <div class="inp-field cabinet-general-form__field">
+                <label for="surname" class="label">Фамилия</label>
+                <input type="text" name="surname" id="surname" class="inp" placeholder="Фамилия" value="Дак">
+              </div>
+              <a href="#modalPassword" class="btn btn--s cabinet-general-form__change-pass js-modal-cabinet">Сменить пароль</a>
+            </div>
+            <div class="cabinet-general-form__col">
+              <div class="inp-field cabinet-general-form__field">
+                <label for="tel" class="label">Телефон</label>
+                <input type="tel" name="tel" id="tel" class="inp" placeholder="+7 _ _ _   _ _ _ - _ _ - _ _"
+                       value="+7 958 659-89-65" disabled>
+                <a href="#modalTel" class="cabinet-general-form__edit js-modal-cabinet">
+                  <img src="images/cabinet/icon-edit.svg" alt=""></a>
+              </div>
+              <div class="inp-field inp-field--error cabinet-general-form__field">
+                <label for="email" class="label space-between">E-mail <a href="#">Отправить запрос повторно</a></label>
+                <input type="email" name="email" id="email" class="inp" placeholder="donaldduck@gmail.com"
+                       value="donaldduck@gmail.com" disabled>
+                <div class="inp-msg">E-mail не подтвержден</div>
+                <a href="#" class="cabinet-general-form__edit js-email-cabinet">
+                  <img src="images/cabinet/icon-edit.svg" alt=""></a>
+              </div>
+              <div class="inp-field cabinet-general-form__field">
+                <label class="label">Отдел</label>
+                <div class="chips-done">
+                  <div class="chips-done__item">Финансовый отдел</div>
+                  <div class="chips-done__item">Материально-технический</div>
+                </div>
+                <a href="#modalEdit" class="cabinet-general-form__edit js-modal-cabinet">
+                  <img src="images/cabinet/icon-edit.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="cabinet-general-form__avatar">
+            <input type="file" name="avatar" id="avatar" accept="image/*">
+            <div class="cabinet-general-form__avatar-controls">
+              <label for="avatar" class="cabinet-general-form__avatar-btn">
+                <img src="images/cabinet/icon-upload.svg" alt="">
+              </label>
+              <a href="#" class="cabinet-general-form__avatar-btn">
+                <img src="images/cabinet/icon-delete.svg" alt="">
+              </a>
+            </div>
+            <img src="images/cabinet/user-avatar.jpg" alt="filename">
+          </div>
+          <div class="cabinet-general-form__block">
+            <div class="title-form">Локализация</div>
+            <div class="cabinet-general-form__col">
+              <div class="inp-field cabinet-general-form__field">
+                <label for="time" class="label">Часовой пояс</label>
+                <div class="select">
+                  <select id="time" name="time">
+                    <option value="0">Москва, Санкт-Петербург (+3 ч)</option>
+                    <option value="2">Москва, Санкт (+2 ч)</option>
+                    <option value="1">Москва, Петербург (+1 ч)</option>
+                    <option value="3">Москва, Санкт-Петербург (+4 ч)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="inp-field cabinet-general-form__field">
+                <label for="format" class="label">Формат отображаемой даты</label>
+                <div class="select">
+                  <select id="format" name="format">
+                    <option value="0">ДД.ММ.ГГГГ</option>
+                    <option value="2">ДД-ММ-ГГГГ</option>
+                    <option value="1">ДД.ММ.ГГ</option>
+                    <option value="3">ДД.ММ.ГГГГ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="cabinet-general-form__col">
+              <div class="inp-field cabinet-general-form__field">
+                <label for="lang" class="label">Язык интерфейса</label>
+                <div class="select select--icon">
+                  <select name="lang" id="lang">
+                    <option value="0" data-icon="images/flag-1.png">Русский</option>
+                    <option value="2" data-icon="images/flag-3.png">English</option>
+                    <option value="1" data-icon="images/flag-1.png">Русский</option>
+                    <option value="3" data-icon="images/flag-2.png">中文 (繁體)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="modalEdit">
+  <div class="modal-window modal-window__user-edit">
+    <div class="modal-window__user-edit__icon">
+      <button class="icon-btn">
+        <svg width="2" height="14" viewBox="0 0 2 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="1" cy="1" r="1"/>
+          <circle cx="1" cy="7" r="1"/>
+          <circle cx="1" cy="13" r="1"/>
+        </svg>
+      </button>
+      <div class="modal-window__user-edit__icon-menu dd-box">
+        <a href="#" class="dd-box__item">Удалить учетную запись</a>
+        <a href="#" class="dd-box__item">Заблокировать пользователя</a>
+      </div>
+    </div>
+    <div class="modal-window__title">
+      <div class="title-form">Редактирование пользователя</div>
+    </div>
+    <form method="get" class="modal-user-edit-form">
+      <div class="cabinet-general-form__block">
+        <div class="cabinet-general-form__col">
+          <div class="inp-field cabinet-general-form__field">
+            <label for="name1" class="label">Имя</label>
+            <input type="text" name="name1" id="name1" class="inp" placeholder="Имя" value="Дональд">
+          </div>
+          <div class="inp-field cabinet-general-form__field">
+            <label for="surname1" class="label">Фамилия</label>
+            <input type="text" name="surname1" id="surname1" class="inp" placeholder="Фамилия" value="Дак">
+          </div>
+        </div>
+        <div class="cabinet-general-form__col">
+          <div class="inp-field cabinet-general-form__field">
+            <label for="tel1" class="label">Телефон</label>
+            <input type="tel" name="tel1" id="tel1" class="inp" placeholder="+7 _ _ _   _ _ _ - _ _ - _ _"
+                   value="+7 958 659-89-65" disabled>
+            <a href="#modalEdit"
+               class="cabinet-general-form__edit"><img src="images/cabinet/icon-edit.svg" alt=""></a>
+          </div>
+          <div class="inp-field inp-field--error cabinet-general-form__field">
+            <label for="email1" class="label space-between">E-mail <a href="#">Отправить запрос повторно</a></label>
+            <input type="email" name="email1" id="email1" class="inp" placeholder="donaldduck@gmail.com"
+                   value="donaldduck@gmail.com" disabled>
+            <div class="inp-msg">E-mail не подтвержден</div>
+            <a href="#modalEdit"
+               class="cabinet-general-form__edit"><img src="images/cabinet/icon-edit.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="inp-field modal-user-edit__chips">
+          <label class="label">Отдел</label>
+          <div class="chips">
+            <div class="chip">Длинное название отдела <span class="chip__close"></span></div>
+            <div class="chip">Длинное название еще одного отдела <span class="chip__close"></span></div>
+            <input type="text" id="chip-1" title="chip" class="inp-chip">
+          </div>
+        </div>
+      </div>
+      <div class="cabinet-general-form__avatar modal-user-edit__avatar">
+        <input type="file" name="avatar1" id="avatar1" accept="image/*">
+        <div class="cabinet-general-form__avatar-controls">
+          <label for="avatar1" class="cabinet-general-form__avatar-btn">
+            <img src="images/cabinet/icon-upload.svg" alt="">
+          </label>
+          <a href="#" class="cabinet-general-form__avatar-btn">
+            <img src="images/cabinet/icon-delete.svg" alt="">
+          </a>
+        </div>
+        <img src="images/cabinet/user-avatar.jpg" alt="filename">
+      </div>
+      <div class="modal-user-edit-form__btn">
+        <a href="#" class="btn btn--s modal-user-edit-form__change-pass">Сменить пароль</a>
+        <a href="#" class="btn btn--s modal-user-edit-form__btn-s js-modal-close">Отменить</a>
+        <a href="#" class="btn btn--p modal-user-edit-form__btn-s">Сохранить</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="modalPassword">
+  <div class="modal-window modal-window__password-edit">
+    <div class="modal-window__title">
+      <div class="title-form">Смена пароля</div>
+    </div>
+    <form method="get" class="modal-password-edit-form">
+      <div class="inp-field cabinet-general-form__field">
+        <label for="pass" class="label">Текущий пароль</label>
+        <input type="text" name="pass" id="pass" class="inp" placeholder="" value="">
+      </div>
+      <div class="inp-field cabinet-general-form__field">
+        <label for="passN" class="label">Новый пароль</label>
+        <input type="password" name="passN" id="passN" class="inp" placeholder="" value="">
+        <div class="inp-msg">Минимум 6 символов</div>
+      </div>
+      <div class="inp-field cabinet-general-form__field">
+        <label for="passNR" class="label">Новый пароль повторно</label>
+        <input type="password" name="passNR" id="passNR" class="inp" placeholder="" value="">
+      </div>
+      <div class="modal-btns-down modal-password-edit-form__btns">
+        <a href="#" class="btn btn--s modal-btn-down-regular js-modal-close">Отменить</a>
+        <button class="btn btn--p modal-btn-down-regular" type="submit">Сохранить</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="modalTel">
+  <div class="modal-window modal-window__tel-edit">
+    <div class="modal-window__title">
+      <div class="title-form">Смена телефона</div>
+    </div>
+    <form method="get" class="modal-tel-edit-form">
+      <div class="inp-field cabinet-general-form__field">
+        <label for="tel11" class="label">Мобильный телефон</label>
+        <input type="tel" name="tel11" id="tel11" class="inp" placeholder="+7 _ _ _   _ _ _ - _ _ - _ _"
+               value="+7 956 895-56-12">
+      </div>
+      <div class="inp-field cabinet-general-form__field">
+        <label for="code" class="label">Код из SMS</label>
+        <input type="text" name="code" id="code" class="inp" placeholder="4 цифры" value="" disabled>
+        <div class="inp-msg">Сессия: 468469</div>
+      </div>
+      <div class="modal-btns-down modal-tel-edit-form__btns">
+        <a href="#" class="btn btn--s modal-btn-down-regular js-modal-close">Отменить</a>
+        <button class="btn btn--p modal-btn-down-regular" type="submit">Сохранить</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="js/imask.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

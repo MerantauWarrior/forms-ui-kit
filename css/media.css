@@ -8,16 +8,78 @@
         margin-bottom: 36px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /*Login Page*/
+    .login-error{
+        width: 425px;
+    }
+    /*Cabinet Pages*/
+    .cabinet__sidebar{
+        width: 64px;
+        min-width: 64px;
+    }
+    .cabinet__logo{
+        margin: 32px 16px 96px 16px;
+    }
+    .cabinet__logo-icon{
+        width: 32px;
+        height: 32px;
+    }
+    .cabinet__logo-text{
+        display: none;
+    }
+    .cabinet-menu__text{
+        display: none;
+    }
+    .cabinet-menu__ddb{
+        width: 36px;
+        margin: 0 14px 32px 14px;
+    }
+    .cabinet-menu__ddb-icon{
+        position: static;
+        margin-top: 0;
+    }
+    .cabinet-menu__ddb button{
+        min-width: 36px;
+        padding: 0;
+    }
+    .cabinet-menu__ddb-items{
+        width: 208px;
+    }
+    .cabinet-menu__ddb span:not(.cabinet-menu__ddb-icon){
+        display: none;
+    }
+    .cabinet-menu__item{
+        justify-content: center;
+        padding: 8px 0;
+    }
+    .cabinet-menu__item:hover .tooltip {
+        display: block;
+        bottom: 43px;
+        left: 48px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .screen-forms{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
-    .screen-forms{
-        min-height:initial;
+    /*Cabinet Pages*/
+    .cabinet-general-form__avatar{
+        margin: 0 auto 36px auto;
+    }
+    .cabinet-top__tabs{
+        margin: 0 16px;
+    }
+    .cabinet-top__tab{
+        margin-right: 0;
+    }
+    .modal-user-edit__avatar{
+        margin-top: 26px;
+    }
+    .modal-user-edit-form__btn{
+        padding-top: 0;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -33,17 +95,108 @@
     .registration__row .registration__field{
         width: 100%;
     }
+    /*Cabinet Pages*/
+    .cabinet__mobile-menu{
+        display: block;
+    }
+    .cabinet__sidebar{
+        position: fixed;
+        top: 0;
+        left: -256px;
+        bottom: 0;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+        z-index: 3;
+    }
+    .cabinet-general{
+        padding: 30px 15px;
+    }
+    .cabinet-top__tabs{
+        margin: 0 15px;
+    }
+    .cabinet-top__tab{
+        margin-right: 0;
+        padding: 6px 10px 2px 10px;
+    }
+    .cabinet-top__controls{
+        margin: 15px;
+        padding: 0;
+        border-left:none;
+    }
+    .cabinet-general-form__col{
+        margin-right: 36px;
+    }
+    .cabinet-general-form__avatar{
+        margin: 0 auto 36px auto;
+    }
+    .cabinet-general-form__col{
+        max-width: 100%;
+    }
+    .cabinet-general-form__change-pass{
+        margin: 26px 0;
+    }
+    .cabinet__content .message{
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        z-index: 5;
+    }
+    .modal-window__tel-edit{
+        height: auto;
+    }
+    .modal-user-edit-form__btn-s{
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .modal-user-edit__avatar{
+        margin: 0 auto;
+    }
+    .modal-user-edit-form__btn{
+        padding-top: 10px;
+    }
+    .modal-password-edit-form__btns{
+        margin-top: 26px;
+    }
+    .modal-window__password-edit .modal-btn-down-regular,
+    .modal-window__tel-edit .modal-btn-down-regular{
+        width: 100%;
+        margin-top: 15px;
+    }
 }
-@media screen and (max-width: 374px) and (orientation: portrait){
-    .space-between > a{
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+    .screen-forms{
+        min-height:initial;
+    }
+    /*Cabinet Pages*/
+    .cabinet__sidebar{
+        flex-wrap: nowrap;
+        overflow-y: auto;
+    }
+}
+@media screen and (max-width: 374px) and (orientation: portrait) {
+    .screen-forms .space-between > a {
         display: block;
         width: 100%;
         margin-top: 10px;
     }
-    .screen-forms-language{
+
+    .screen-forms-language {
         width: 70px;
     }
-    .select span{
+
+    .screen-forms-language .select span {
         display: none;
+    }
+    /*Cabinet Pages*/
+    .cabinet-top__user,
+    .cabinet-top__notification{
+        margin-left: 15px;
+    }
+    .cabinet-top__controls {
+        margin: 15px 9px;
     }
 }
