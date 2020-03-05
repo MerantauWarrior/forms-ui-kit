@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="css/ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <!--[if IE]>
-
-  <![endif]-->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       if(Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject){
@@ -185,7 +182,9 @@
       </div>
     </div>
     <div class="cabinet__content">
-      <div class="message message--error">Нет соединения с Интернетом</div>
+      <div class="message-box">
+        <div class="message message--error">Нет соединения с Интернетом</div>
+      </div>
       <div class="cabinet-general">
         <form method="get" class="cabinet-general-form">
           <div class="cabinet-general-form__block">
