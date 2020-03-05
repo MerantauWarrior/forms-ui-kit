@@ -528,6 +528,10 @@ a.cabinet-top__tab:hover{
     padding-top: 24px;
     border-top: 1px solid #E6E7E4;
 }
+.cabinet-general-form__separator{
+    display: flex;
+    width: 100%;
+}
 .cabinet-general .title-form{
     width: 100%;
     margin-bottom: 19px;
