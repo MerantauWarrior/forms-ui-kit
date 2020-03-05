@@ -459,7 +459,10 @@ a.dd-box__item:hover{
     z-index: 99;
 }
 .modal_opened{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .modal-window{
     position: relative;
@@ -525,5 +528,8 @@ a.dd-box__item:hover{
     }
     .chip{
         white-space: normal;
+    }
+    .modal_opened{
+        display: block;
     }
 }
