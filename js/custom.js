@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     NodeList.prototype.forEach = Array.prototype.forEach;
   }
 // //Phone mask
+
 //   if (document.querySelectorAll('input[type="tel"]').length > 0) {
 //     document.querySelectorAll('input[type="tel"]').forEach(function (tel) {
 //       var maskOptions = {
