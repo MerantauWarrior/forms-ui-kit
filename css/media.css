@@ -147,7 +147,8 @@
     .modal-window__tel-edit{
         height: auto;
     }
-    .modal-user-edit-form__btn-s{
+    .modal-user-edit-form__btn-s,
+    .modal-user-edit-form__change-pass{
         width: 100%;
         margin-top: 15px;
         margin-right: 0;

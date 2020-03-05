@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (typeof NodeList !== "undefined" && NodeList.prototype && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = Array.prototype.forEach;
   }
-//Phone mask
-  if (document.querySelectorAll('input[type="tel"]').length > 0) {
-    document.querySelectorAll('input[type="tel"]').forEach(function (tel) {
-      var maskOptions = {
-        mask: '+{7} 000 000-00-00'
-      };
-      var mask = IMask(tel, maskOptions);
-    });
-  }
+// //Phone mask
+//   if (document.querySelectorAll('input[type="tel"]').length > 0) {
+//     document.querySelectorAll('input[type="tel"]').forEach(function (tel) {
+//       var maskOptions = {
+//         mask: '+{7} 000 000-00-00'
+//       };
+//       var mask = IMask(tel, maskOptions);
+//     });
+//   }
 
 //Login timer
   var coutnowd = function startTimer(duration, display) {
