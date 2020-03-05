@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-//Fixes for FUCKING IE browser
+//Fixes for IE browser
   if (typeof NodeList !== "undefined" && NodeList.prototype && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = Array.prototype.forEach;
   }
