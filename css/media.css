@@ -178,6 +178,9 @@
         flex-wrap: nowrap;
         overflow-y: auto;
     }
+    .cabinet-menu__list {
+        flex-wrap: nowrap;
+    }
 }
 @media screen and (max-width: 374px) and (orientation: portrait) {
     .screen-forms .space-between > a {
