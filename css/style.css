@@ -282,7 +282,7 @@ body{
     margin-left: 5px;
 }
 .cabinet__menu{
-    flex: 1;
+    flex: 1 1 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
